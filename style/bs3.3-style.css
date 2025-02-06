@@ -1,0 +1,159 @@
+/* Bootsrap 3.3 Style Sheet Overrides for LibGuides */
+
+
+/* overarching styles */
+
+body {
+    background: white;
+    margin: 0 auto;
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+h2 {
+    font-size: 1rem !important;
+}
+
+.nav-pills>li.active>button,.nav-pills>li.active>button:focus,.nav-pills>li.active>button:hover {
+    background-color: #c8102e;
+    color: #fff
+}
+
+button:hover {
+    background-color: #960C22;
+    color: #fff
+}
+
+button:focus {
+    background-color: #c8102e;
+    color: #fff
+}
+
+/* Header */
+
+@media (max-width: 768px) {
+
+    /* scale down logo on small screen */
+    .img-responsive {
+        width: 40%;
+    }
+}
+
+/* Override default navbar heights in Bootstrap 3 */
+
+.navbar,
+.navbar-default {
+    min-height: auto;
+    background-color: #c8102e;
+    border: none;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.navbar-brand img {
+    max-width: 100%;
+}
+
+.navbar .navbar-brand,
+.navbar-nav>li>a {
+    height: auto;
+    line-height: 1rem;
+    padding: 8;
+    background-color: transparent !important;
+}
+
+.navbar-nav>li>a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #ffffff;
+}
+
+.navbar-nav>ul {
+    height: auto;
+}
+
+.navbar-nav>ul>li {
+    height: auto;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+    opacity: 0.5;
+
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    opacity: 1;
+    color: #ffffff;
+    transition: 0.25s;
+    background: none;
+}
+
+.navbar-default .navbar-nav>li>a:focus {
+    opacity: 1;
+    color: #ffffff;
+    transition: 0.25s;
+    background: none;
+}
+
+
+
+
+
+/*footer*/
+
+/* testing bottom navbar */
+.bottom-nav {
+    position: absolute;
+    bottom: 40%;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.text-white {
+    color: #ffffff;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+footer a:hover,
+a:focus {
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+
+}
+
+footer>a,
+p {
+    padding: .1rem;
+}
+
+footer>.navbar-fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #c8102e;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer .icon {
+    font-size: 1.5rem;
+    padding: .3rem;
+
+}

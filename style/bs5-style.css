@@ -1,0 +1,117 @@
+:root {
+    /* Primary Colors */
+    --color-primary-red: #c8102e;
+    --color-primary-teal: #00b388;
+    --color-primary-gold: #f6be00;
+    --color-primary-gray: #888b8d;
+    --color-primary-cream: #fff9d9;
+    --color-primary-white: #ffffff;
+
+    /* Secondary Colors */
+    --color-secondary-brick: #00866c;
+    --color-secondary-green: #00866c;
+    --color-secondary-mustard: #d89b00;
+    --color-secondary-slate: #54585a;
+
+    /* Tertiary Colors */
+    --color-tertiary-chocolate: #640817;
+    --color-tertiary-forest: #005950;
+    --color-tertiary-ocher: #b97800;
+    --color-tertiary-black: #000000;
+}
+
+/* main margin for viewports */
+
+main {
+    margin-bottom: 7rem;
+}
+
+/* custom background classes */
+
+.bg-primary-red {
+    background-color: var(--color-primary-red);
+}
+
+.bg-tertiary-black {
+    background-color: var(--color-tertiary-black);
+    color: var(--color-primary-white)
+}
+
+.bg-primary-grey {
+    background-color: var(--color-primary-gray);
+}
+
+/* Navigation CSS */
+
+.nav-tabs {
+    display: flex;
+    gap: .5rem;
+}
+
+.nav-tabs .nav-link {
+    background: var(--color-primary-white);
+    color: var(--color-tertiary-black);
+    border-color: transparent;
+}
+
+.nav-tabs .nav-link.active {
+    background: var(--color-primary-red);
+    color: var(--color-primary-white);
+    border-color: transparent;
+    transform: scale(1.1);
+    z-index: 1;
+    flex: none;
+}
+
+/* Card CSS */
+
+.card {
+    background: lightgray;
+    border: none;
+    color: var(--color-tertiary-black);
+    border-color: transparent;
+    border-radius: 1rem;
+}
+
+.card a {
+    color: var(--color-tertiary-black);
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: var(--color-tertiary-chocolate);
+}
+
+/* Tab Pane CSS */
+
+.tab-pane a {
+    color: var(--color-primary-white);
+    text-decoration: none;
+}
+
+.tab-pane a:hover {
+    color: var(--color-primary-red);
+}
+
+.btn {
+    background: var(--color-primary-red);
+    color: var(--color-primary-white);
+    border: none;
+}
+
+.btn:hover {
+    background: var(--color-tertiary-chocolate);
+    color: var(--color-primary-white);
+}
+
+/* LibAnswer Widget CSS */
+
+la-combo-widget-btn {
+    z-index: 9999;
+}
+
+
+
+table {
+    width: 100%;
+}

@@ -1,0 +1,138 @@
+/* Bootsrap 3.4 Style Sheet for LibGuides */
+
+
+
+
+/* Override default navbar heights in Bootstrap 3 */
+
+body {
+    background: white;
+    margin: 0 auto;
+    max-width: none;
+}
+
+.navbar,
+.navbar-default {
+    min-height: auto;
+    /* Remove default min-height (usually 50px) */
+    background-color: #c8102e;
+    border: none;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.navbar-brand img {
+    max-width: 100%;
+}
+
+.navbar .navbar-brand,
+.navbar-nav>li>a {
+    height: auto;
+    /* Let the element expand based on content */
+    line-height: 1rem;
+    /* Remove the forced line-height */
+    padding: 8;
+    background-color: transparent !important;
+}
+
+.navbar-nav>li>a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #ffffff;
+}
+
+.navbar-nav>ul {
+    height: auto;
+}
+
+.navbar-nav>ul>li {
+    height: auto;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+    opacity: 0.5;
+
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    opacity: 1;
+    color: #ffffff;
+    transition: 0.25s;
+    background: none;
+}
+
+.navbar-default .navbar-nav>li>a:focus {
+    opacity: 1;
+    color: #ffffff;
+    transition: 0.25s;
+    background: none;
+}
+
+/* testing bottom navbar */
+.bottom-nav {
+    position: absolute;
+    bottom: 40%;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.text-white {
+    color: #ffffff;
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+/* Smaller Responsive Image */
+
+@media (max-width: 768px) {
+
+    /* Small screens (sm) in Bootstrap 3 */
+    .img-responsive {
+        width: 40%;
+        /* Scale down to half size */
+    }
+}
+
+/*footer*/
+
+footer a:hover,
+a:focus {
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+
+}
+
+footer>.navbar-fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #c8102e;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer>a,
+p {
+    padding: .1rem;
+}
+
+footer .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer .icon {
+    font-size: 1.5rem;
+    padding: .3rem;
+
+}

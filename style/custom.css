@@ -1,0 +1,21 @@
+:root {
+  /* Primary Colors */
+  --color-primary-red: #c8102e;
+  --color-primary-teal: #00b388;
+  --color-primary-gold: #f6be00;
+  --color-primary-gray: #888b8d;
+  --color-primary-cream: #fff9d9;
+  --color-primary-white: #ffffff;
+
+  /* Secondary Colors */
+  --color-secondary-brick: #00866c;
+  --color-secondary-green: #00866c;
+  --color-secondary-mustard: #d89b00;
+  --color-secondary-slate: #54585a;
+
+  /* Tertiary Colors */
+  --color-tertiary-chocolate: #640817;
+  --color-tertiary-forest: #005950;
+  --color-tertiary-ocher: #b97800;
+  --color-tertiary-black: #000000;
+}

@@ -20,8 +20,12 @@ h2 {
     color: #fff
 }
 
-a:not(header, footer){
+#s-lg-guide-main a{
     text-decoration: underline;
+}
+
+#s-lg-guide-main a:hover{
+    color: #c8102e;
 }
 
 button:hover {

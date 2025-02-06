@@ -3,6 +3,23 @@
 
 /* overarching styles */
 
+:root {
+    --color-primary-red: #c8102e;
+    --color-primary-teal: #00b388;
+    --color-primary-gold: #f6be00;
+    --color-primary-gray: #888b8d;
+    --color-primary-cream: #fff9d9;
+    --color-primary-white: #ffffff;
+    --color-secondary-brick: #00866c;
+    --color-secondary-green: #00866c;
+    --color-secondary-mustard: #d89b00;
+    --color-secondary-slate: #54585a;
+    --color-tertiary-chocolate: #640817;
+    --color-tertiary-forest: #005950;
+    --color-tertiary-ocher: #b97800;
+    --color-tertiary-black: #000000;
+}
+
 body {
     background: white;
     margin: 0 auto;
@@ -11,20 +28,13 @@ body {
     padding-right: 0;
 }
 
-h2 {
-    font-size: 1rem !important;
-}
 
 
-.nav .s-lg-index-nav-btn>button {
-    color: #c8102e;
-    background-color: transparent;
-}
+/* Nav Header */
 
 .nav-pills>li.active>button,
 .nav-pills>li.active>button:focus,
-.nav-pills>li.active>button:hover,
-.nav-tabs>li.active {
+.nav-pills>li.active>button:hover {
     background-color: #c8102e;
     color: #fff
 }
@@ -48,23 +58,6 @@ h2 {
 
 #s-lg-guide-main a:hover {
     color: #c8102e;
-}
-
-#s-lib-public-main .btn {
-    background-color: #c8102e;
-    color: #ffffff
-}
-
-li:active {}
-
-button:hover {
-    background-color: #960C22;
-    color: #fff
-}
-
-button:focus {
-    background-color: #c8102e;
-    color: #fff
 }
 
 /* Header */
@@ -136,13 +129,27 @@ button:focus {
     background: none;
 }
 
+/* Body */
+
+/* schedule buttons */
+#mysched_0, #mysched_105724 {
+    background: var(--color-primary-red);
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    color: var(--color-primary-white);
+    /* font: 14px Arial, Helvetica, Verdana; */
+    padding: 8px 20px;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 1rem !important;
+}
 
 
 
+/*Footer*/
 
-/*footer*/
-
-/* testing bottom navbar */
 .bottom-nav {
     position: absolute;
     bottom: 40%;
@@ -165,7 +172,6 @@ a:focus {
 
 footer a {
     color: #ffffff;
-
 }
 
 footer>a,
@@ -192,5 +198,13 @@ footer .container {
 footer .icon {
     font-size: 1.5rem;
     padding: .3rem;
+}
 
+@media (max-width: 768px) {
+
+    /* scale down logo on small screen */
+    footer .icon {
+        font-size: 1rem;
+        padding: .3rem;
+    }
 }

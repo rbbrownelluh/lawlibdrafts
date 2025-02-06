@@ -20,6 +20,10 @@ h2 {
     color: #fff
 }
 
+a:not(header, footer){
+    text-decoration: underline;
+}
+
 button:hover {
     background-color: #960C22;
     color: #fff

@@ -60,6 +60,12 @@ body {
     color: #c8102e;
 }
 
+/* keep space from hiding under footer */
+
+#s-lg-guide-main{
+    margin-bottom: 2rem;
+}
+
 /* Header */
 
 @media (max-width: 768px) {
@@ -201,10 +207,17 @@ footer .icon {
 }
 
 @media (max-width: 768px) {
-
-    /* scale down logo on small screen */
     footer .icon {
         font-size: 1rem;
-        padding: .3rem;
+        padding: none
     }
+}
+
+[class^="bi-"]::before, [class*=" bi-"]::before {
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    vertical-align: -.25em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }

@@ -15,18 +15,47 @@ h2 {
     font-size: 1rem !important;
 }
 
-.nav-pills>li.active>button,.nav-pills>li.active>button:focus,.nav-pills>li.active>button:hover {
+
+.nav .s-lg-index-nav-btn>button {
+    color: #c8102e;
+    background-color: transparent;
+}
+
+.nav-pills>li.active>button,
+.nav-pills>li.active>button:focus,
+.nav-pills>li.active>button:hover,
+.nav-tabs>li.active {
     background-color: #c8102e;
     color: #fff
 }
 
-#s-lg-guide-main a{
+/* hide libguides assetts */
+
+#s-lib-bc,
+#s-lg-guide-header>.pull-right,
+#s-lib-footer-public {
+    display: none
+}
+
+#s-lg-guide-header-info {
+    padding-top: 1rem;
+    padding-bottom: .5rem
+}
+
+#s-lg-guide-main a {
     text-decoration: underline;
 }
 
-#s-lg-guide-main a:hover{
+#s-lg-guide-main a:hover {
     color: #c8102e;
 }
+
+#s-lib-public-main .btn {
+    background-color: #c8102e;
+    color: #ffffff
+}
+
+li:active {}
 
 button:hover {
     background-color: #960C22;

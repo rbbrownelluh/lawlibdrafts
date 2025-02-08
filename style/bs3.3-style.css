@@ -28,7 +28,9 @@ body {
     padding-right: 0;
 }
 
-
+h2 {
+    font-size: 1rem !important;
+}
 
 /* Nav Header */
 
@@ -135,22 +137,6 @@ body {
     background: none;
 }
 
-/* Body */
-
-/* schedule buttons */
-#mysched_0, #mysched_105724 {
-    background: var(--color-primary-red);
-    border: 1px solid #CCCCCC;
-    border-radius: 4px;
-    color: var(--color-primary-white);
-    /* font: 14px Arial, Helvetica, Verdana; */
-    padding: 8px 20px;
-    cursor: pointer;
-}
-
-h2 {
-    font-size: 1rem !important;
-}
 
 
 
